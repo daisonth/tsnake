@@ -44,14 +44,14 @@ void printEndScreen(WINDOW *win, int highscore, int score)
 	mvwprintw(win,height/2 - 2,width/2 - 10,R"(        OVER \  /  )");
 	mvwprintw(win,height/2 - 1,width/2 - 10,R"(   __________/ /   )");
 	mvwprintw(win,height/2 - 0,width/2 - 10,R"(-=:___________/    )");
-	if(highscore < score)
+	if(highscore == score)
 	{
-		highscore = score;
 		mvwprintw(win,height/2 + 3,width/2 - 9,"NEW HIGHSCORE : %d",highscore);
 	}
 	mvwprintw(win,height - 6,width/2 - 13,R"(press 'ENTER' to play again)");
 	mvwprintw(win,height - 4,width/2 - 8,R"(press 'Q' to quit)");
 	wrefresh(win);
+
 }
 
 

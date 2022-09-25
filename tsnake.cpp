@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 		int nextdireciton = -1, direction = KEY_UP;
 		char body = 'o', apple = 'A';
 
-		std::vector<char> snake(5,'X');
+		std::vector<char> snake(10,'X');
 		std::deque<int> moves;
 		std::vector<std::pair<int,int>> positons;
 
@@ -134,6 +134,7 @@ int main(int argc, char *argv[])
 			if(pos != positons.end()) break;
 		}
 
+		if(highscore < score) highscore = score;
 		printEndScreen(board, highscore, score);
 
 		// take input

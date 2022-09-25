@@ -3,8 +3,8 @@
 
 C++ Terminal Snake game using Ncurses library.
 
+<img src="screenshots/scr0.png" alt="Preview" />
 <img src="screenshots/scr1.png" alt="Preview" />
 <img src="screenshots/scr2.png" alt="Preview" />
-<img src="screenshots/scr3.png" alt="Preview" />
 
 </div>
